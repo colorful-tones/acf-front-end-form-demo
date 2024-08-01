@@ -22,7 +22,8 @@
   ],
   "steps": [
     {
-        "step": "resetData"
+        "step": "wp-cli",
+        "command": "wp site empty --yes"
     },
     {
         "step": "setSiteOptions",
