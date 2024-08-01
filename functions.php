@@ -55,7 +55,8 @@ function ttnineteen_acf_register_form() {
 					'post_status' => 'draft',
 				),
 				'post_id'               => 'new_post',
-				'return'                => esc_url( home_url( 'thank-you' ) ), // Redirect to 'Thank you' page.
+				'updated_message'       => __( 'Recipe submitted!', 'theme-slug' ),
+				'html_updated_message'  => '<div id="message" class="acf-form-notification"><p>%s</p></div>',
 				'submit_value'          => __( 'Submit', 'theme-slug' ),
 			)
 		);

@@ -58,3 +58,14 @@
 		flex-wrap: wrap;
 	}
 }
+
+.acf-form-notification {
+	border: 1px solid var(--wp--preset--color--vivid-green-cyan);
+	padding: 1rem;
+}
+
+.acf-form-notification p:first-of-type::before {
+	content: "✅";
+	display: inline-block;
+	margin-right: 0.33rem;
+}
