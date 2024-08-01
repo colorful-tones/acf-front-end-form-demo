@@ -19,46 +19,47 @@ $total_time  = $recipe['total_time'] ?? null;
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( ! twentynineteen_can_show_post_thumbnail() ) : ?>
 	<header class="entry-header">
-		<figure class="post-thumbnail">
-			<?php
-			if ( $image ) {
-				echo wp_get_attachment_image( $image, 'full' );
-			}
-			?>
-		</figure><!-- .post-thumbnail -->
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 		<div class="entry-meta">
 			<span class="recipe-author">Submitted by: <?php echo esc_html( $author_fn ) . ' ' . esc_html( $author_ln ); ?></span>
 	</header>
 	<?php endif; ?>
 
-	<div class="entry-content recipe-details">
-		<?php the_content(); ?>
+	<div class="entry-content">
+		<div class="recipe-details">
+			<?php the_content(); ?>
 
-		<ul class="recipe-times unlist">
-			<li><strong>Prep time: </strong><?php echo esc_html( $prep_time ); ?></li>
-			<li><strong>Cook time: </strong><?php echo esc_html( $cook_time ); ?></li>
-			<li><strong>Total time: </strong><?php echo esc_html( $total_time ); ?></li>
-		</ul>
+			<ul class="recipe-times unlist">
+				<li><strong>Prep time: </strong><?php echo esc_html( $prep_time ); ?></li>
+				<li><strong>Cook time: </strong><?php echo esc_html( $cook_time ); ?></li>
+				<li><strong>Total time: </strong><?php echo esc_html( $total_time ); ?></li>
+			</ul>
+			
+			<h2 class="recipe-heading">Ingredients</h2>
+			<p>
+				<?php
+				if ( $ingredients ) {
+					echo wp_kses_post( $ingredients );
+				}
+				?>
+			</p>
+
+			<h2 class="recipe-heading">Steps</h2>
+			<p>
+				<?php
+				if ( $steps ) {
+					echo wp_kses_post( $steps );
+				}
+				?>
+			</p>
+		</div>
 		
-		<h2 class="recipe-heading">Ingredients</h2>
-		<p>
+		<figure class="post-thumbnail recipe-photo">
 			<?php
-			if ( $ingredients ) {
-				echo wp_kses_post( $ingredients );
+			if ( $image ) {
+				echo wp_get_attachment_image( $image, 'large' );
 			}
 			?>
-		</p>
-
-		<h2 class="recipe-heading">Steps</h2>
-		<p>
-			<?php
-			if ( $steps ) {
-				echo wp_kses_post( $steps );
-			}
-			?>
-		</p>
-		
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
