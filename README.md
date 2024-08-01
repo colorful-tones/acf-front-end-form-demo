@@ -2,6 +2,8 @@
 
 __Fork it, or download the [latest release](https://github.com/colorful-tones/acf-front-end-form-demo/releases), and make it your own!__
 
+👉 [Click to launch a playground demo](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/colorful-tones/acf-front-end-form-demo/main/blueprint.json) 👈
+
 ## What
 
 A WordPress [child theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) of the default [TwentyNineteen theme](https://wordpress.org/themes/twentynineteen/).
