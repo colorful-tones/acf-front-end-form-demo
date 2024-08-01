@@ -1,0 +1,40 @@
+/**
+ * Theme Name: ttNineteen Child
+ * Description: A child theme of TwentyNineteen.
+ * Template:   twentynineteen
+ * Text Domain: ttn-child
+ */
+
+.entry .entry-content > .acf-form {
+	max-width: none;
+}
+
+:where(.acf-input) .acf-is-prepended,
+:where(.acf-input) .acf-is-appended {
+	float:left;
+}
+
+:where(.acf-input) .description {
+	font-size: 0.8em;
+}
+
+.recipe-heading {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.recipe-heading::before {
+	content: "";
+	display: none;
+}
+
+.unlist {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.recipe-times {
+	display: flex;
+	justify-content: space-between;
+}`
