@@ -80,6 +80,14 @@
     {
       "step": "wp-cli",
       "command": "wp widget reset --all"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp option update page_on_front 4"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp option update show_on_front page"
     }
   ]
 }
