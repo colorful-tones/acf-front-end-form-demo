@@ -14,7 +14,7 @@ Once the user submits the new recipe, an email with the details is triggered to 
 
 ## How to use
 
-1. Create a test WordPress site. It is quick and easy with Local.
+1. Create a test WordPress site. It is quick and easy with [Local](https://localwp.com/).
 2. Install and activate the [Advanced Custom Fields (ACF) plugin](https://wordpress.org/plugins/advanced-custom-fields/).
 3. [Add the TwentyNineteen default theme](https://wordpress.org/documentation/article/work-with-themes/#adding-new-themes-using-the-administration-screens).
 4. Download the [`ttnineteen-child` theme](https://github.com/colorful-tones/acf-front-end-form-demo/archive/refs/tags/v1.0.0.zip) (this repo), un-zip, and activate it.
